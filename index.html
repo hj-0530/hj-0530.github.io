@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>아아아아아아아아</title>
+        <title>.......</title>
         <style>
           img{
               border: 3px solid silver;
@@ -18,17 +18,51 @@
           }
         </style>
         <script> 
-        var a =1;
-        var b =3;
-        console.log(a+"+"+b+"="+(a+b));
-            alert("오류가 발생함.");
+        var boolen = confirm("계산기를 킬까요?");
+        if(boolen==0)
+        {
+        
+        }
+        else
+        {
+            var firstNum = prompt('Input first Number','');
+            var secondNum = prompt('Input 2nd Number','');
+            var result = Number(firstNum) + Number(secondNum);
+            alert(result);
+        }
+        alert('check');
+        
+        /*
+        if(result==1)
+        {
+           var jvID = prompt('첫번째 숫자 입력', ' ');
+            var jvPW = prompt('두번째 숫자 입력', ' ');
+            {
+                alert(jvID+jvPW);
+            }
+        }
+       */
+       function selector()
+       {
+           var selected = prompt('선택할 함수를 입력하세요. 1. 계산기(덧셈) 2.로그인 3.종료')
+           selected = Number(selected);
+           if(selected == 1){
+               add();}
+           if(selected == 2){
+               login();}
+           if(selected == 3){}
+           else{
+               alert("잘못된 입력입니다. 다시 시도하세요.")
+               selector();}
+           }
+           selector();
         </script>
     </head>
    <body>
        <h1>안녕하세요</h1>
        <p><img src = "ff.jpg" alt = "javascript image"></p>
        <p style = "color:coral">제이름은<br>윤희진 입니다
-       <p style = "color:deeppink">ㅎㅎㅎ</p>
+       <p style = "color:deeppink">,,,</p>
        <details>
            <summary>접기</summary>
            <pre>
